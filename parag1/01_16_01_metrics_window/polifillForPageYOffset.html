@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    'use strict';
+    // полифилл
+    Object.defineProperty(window, 'pageYOffset', {
+      get: function() {
+        return document.documentElement.scrollTop;
+      }
+    });
+    
+    // использование полифилла
+    alert( window.pageYOffset );
+  </script>
+</body>
+
+</html>
